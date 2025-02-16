@@ -6,7 +6,7 @@ drop table if exists bronze.crm_cust_info;
 
 create table bronze.crm_cust_info (
 
-cst_id INT constraint firstkey primary KEY,
+cst_id INT,
 cst_key varchar(50),
 cst_firstname varchar(50),
 cst_lastname varchar(50),
@@ -21,7 +21,7 @@ drop table if exists bronze.crm_prd_info;
 
 create table bronze.crm_prd_info (
 
-prd_id INT constraint fk primary key,
+prd_id INT,
 prd_key varchar(50),
 prd_nm varchar(50),
 prd_cost money,

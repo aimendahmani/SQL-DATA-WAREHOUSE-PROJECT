@@ -28,6 +28,7 @@ CREATE DATABASE datawarehouse;
 CREATE SCHEMA IF NOT EXISTS bronze;
 CREATE SCHEMA IF NOT EXISTS silver;
 CREATE SCHEMA IF NOT EXISTS gold;
+CREATE SCHEMA IF NOT EXISTS log;
 
 -- Confirmation Message
 RAISE NOTICE 'Database and schemas created successfully.';

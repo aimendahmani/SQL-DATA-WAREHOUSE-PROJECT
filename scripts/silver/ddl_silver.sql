@@ -22,12 +22,13 @@ drop table if exists silver.crm_prd_info;
 create table silver.crm_prd_info (
 
 prd_id INT,
+cat_id varchar(50),
 prd_key varchar(50),
 prd_nm varchar(50),
 prd_cost money,
 prd_line varchar(50),
-prd_start_dt timestamp,
-prd_end_dt timestamp,
+prd_start_dt date,
+prd_end_dt date,
 dwh_create_date timestamp default now()
 );
 

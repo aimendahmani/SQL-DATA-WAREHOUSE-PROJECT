@@ -43,7 +43,7 @@ sls_due_dt int,
 sls_sales int,
 sls_quantity int,
 sls_price money
-)
+);
 
 --ERP SOURCE TABLES
 
@@ -55,7 +55,7 @@ CID varchar(50),
 BDATE date,
 GEN varchar(10)
 
-)
+);
 
 drop table if exists bronze.erp_LOC_A101;
 
@@ -64,9 +64,9 @@ create table bronze.erp_LOC_A101(
 CID varchar(50),
 CNTRY varchar(50)
 
-)
+);
 
-drop table if exists bronze.erp_px_cat_g1v2
+drop table if exists bronze.erp_px_cat_g1v2;
 
 create table bronze.erp_px_cat_g1v2(
 
@@ -75,5 +75,5 @@ CAT varchar(50),
 SUBCAT varchar(50),
 MAINTENANCE varchar(50)
 
-)
+);
 
